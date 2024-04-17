@@ -1,0 +1,89 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#about_hero, #ceo_message, #history, #mission {
+    background-image: url('about_background.jpeg'); /* Replace with your about page background image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#about_hero {
+    height: 50vh;
+    
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #00cc99;
+    margin-bottom: 10px;
+}
+
+/* Section specific styles */
+#ceo_message, #history, #mission {
+    background: rgba(0, 0, 0, 0.8); /* Dark background for readability */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    #about_hero {
+        height: auto;
+    }
+
+    h1, h2 {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #724ae8; /* Primary purple */
+    --light-purple: #9b82f3; /* Lighter shade of purple */
+    --dark-purple: #5630b4; /* Darker shade of purple */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ececec;
+    color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: var(--light-purple);
+}
+
+section {
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 960px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card {
+    background: #f8f8f8;
+    border-left: 5px solid var(--primary-color);
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--dark-purple);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1); /* Adding a subtle shadow for depth */
+    position: relative;
+    clear: both; /* Ensuring footer stays at the bottom of the content */
+}
+
+/* Additional Homepage Styles */
+.hero {
+    background:  var(--light-purple);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.btn-main, .btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-main:hover, .btn-secondary:hover {
+    background: var(--light-purple);
+}
+
+.service {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.service h2 {
+    color: var(--dark-purple);
+    margin-bottom: 15px;
+}
+
+.about-us-preview {
+    background: var(--light-purple);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-us-preview h2 {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}

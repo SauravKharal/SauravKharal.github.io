@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Saurav Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Sample Bank Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="investment.html">Investments</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="mortgages.html">Mortgages</a></li>
+            <li><a href="accounts.html">Types of Accounts</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Saurav Bank</h1>
+            <p>Building Tomorrow Today</p>
+            <a href="#services" class="btn-main">Explore Our Services</a>
+        </section>
+        <section id="services">
+            <div class="service">
+                <h2>Investing</h2>
+                <p>Make your money work for you, Investment by experts.</p>
+                <a href="investments.html" class="btn-secondary">Learn More</a>
+            </div>
+            <div class="service">
+                <h2>Loans</h2>
+                <p>Saurav Bank offers flexible loan solutions to help you achieve your personal and business goals.</p>
+                <a href="loans.html" class="btn-secondary">Learn More</a>
+            </div>
+            <div class="service">
+                <h2>Mortgages</h2>
+                <p>Competitive mortgage rates and support through every step of the home buying process.</p>
+                <a href="mortgages.html" class="btn-secondary">Learn More</a>
+            </div>
+            <div class="service">
+                <h2>Accounts</h2>
+                <p>Discover a variety of account options to manage your funds effectively.</p>
+                <a href="accounts.html" class="btn-secondary">Learn More</a>
+            </div>
+        </section>
+        <section class="about-us-preview">
+            <h2>About Us</h2>
+            <p>Learn more about our mission, vision, and how we have been serving our customers since 1990.</p>
+            <a href="about.html" class="btn-secondary">Read More</a>
+        </section>
+    </main>
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+  </button>
+  
+   <div class="chatbot">
+    <header>
+      <h2 id="chat-healine">Chatbot</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Saurav Bank 👋<br>How can I assist you today?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-rounded">send</span>
+    </div>
+  </div>
+    <footer>
+        <p>Contact Us: info@sauravbank.com Phone: 07121212121| Building Tomorrow Today</p>
+    </footer>
+</body>
+</html>
